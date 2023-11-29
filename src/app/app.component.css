@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+*{
+    font-family: 'Lexend', sans-serif;
+}
+#modifier{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#title{
+    text-align: center;
+}
+#length{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    column-gap: 300px;
+}
+#display{
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#number{
+    margin: 5px;
+}
+#btn{
+    margin: 5px;
+}

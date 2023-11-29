@@ -1,0 +1,1 @@
+break length - session length - session - cuando una sesion termina inmediatamente empieza la otra - play/stop - reset
