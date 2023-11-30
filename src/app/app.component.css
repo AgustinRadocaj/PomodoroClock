@@ -25,7 +25,32 @@
 }
 #number{
     margin: 5px;
+    font-size: 20px;
 }
 #btn{
     margin: 5px;
 }
+
+button {
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #004dff;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    border: #004dff;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    background-color: #020cd1;
+  }
