@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { timer } from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,8 @@ export class AppComponent {
   session: number = 25;
   work: boolean = true;
   isRunning: boolean = false;
-  timer: any = 25;
+  timer: number = this.session || this.break;
+  time: any;
 
   breakHandler(param: number) {
     if(param === 1 && this.break <= 24) this.break += 1
@@ -33,24 +34,20 @@ export class AppComponent {
     this.session = 25;
   }
   
-  timerHandler() {
-    if(!this.isRunning){
-      this.timerStart()
-    } else {
-      this.timerStop()
-    }
-  } 
-      
-      timerStart() {
-        this.isRunning = true;
-        this.timer = setInterval(() => this.timer = this.timer - 1, 1000)
-      }
-
-      timerStop() {
-        this.isRunning = false;
-        clearInterval(this.timer)
-      }
+  timerStart() {
+    if(this.isRunning === false)
+    this.isRunning = true;
+    this.time = setInterval(() => this.timer = this.timer - 1, 1000)
+  }
+  timerStop() {
+    if(this.isRunning === true)
+    this.isRunning = false;
+    clearInterval(this.time)
+  }
 }
+
+  
+      
   
   
 

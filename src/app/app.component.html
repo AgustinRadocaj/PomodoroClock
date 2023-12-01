@@ -8,15 +8,15 @@
   <div id="break">
     <h1>Break Length</h1>
     <div id="number">{{break}}</div>
-    <button id="btn" (click)="breakHandler(1)">+</button>
-    <button id="btn" (click)="breakHandler(0)">-</button>
+    <button id="length-btn" (click)="breakHandler(1)">+</button>
+    <button id="length-btn" (click)="breakHandler(0)">-</button>
   </div>
 
   <div id="session">
     <h1>Session Length</h1>
     <div id="number">{{session}}</div>
-    <button id="btn" (click)="sessionHandler(1)">+</button>
-    <button id="btn" (click)="sessionHandler(0)">-</button>
+    <button id="length-btn" (click)="sessionHandler(1)">+</button>
+    <button id="length-btn" (click)="sessionHandler(0)">-</button>
   </div>
 </div>
 </div>
@@ -24,8 +24,9 @@
   <div>
     <h1>Session</h1>
     <div id="number">{{timer}}</div>
-    <button id="btn" (click)="timerHandler()">P/S</button>
-    <button id="btn" (click)="reset()">R</button>
+    <button id="control-btn" (click)="timerStart()">Play</button>
+    <button id="control-btn" (click)="timerStop()">Stop</button>
+    <button id="control-btn" (click)="reset()">Reset</button>
   </div>
 </div>
 </div>

@@ -1,1 +1,3 @@
-break length - session length - session - cuando una sesion termina inmediatamente empieza la otra - play/stop - reset
+el reloj tiene que tomar el valor de la sesion actual
+cuando termine una sesion debe empezar otra
+cambiar el formato del reloj
